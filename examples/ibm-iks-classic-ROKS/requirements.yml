@@ -1,4 +1,0 @@
----
-collections:
-  - name: ibm.cloudcollection
-    version: 1.10.0
