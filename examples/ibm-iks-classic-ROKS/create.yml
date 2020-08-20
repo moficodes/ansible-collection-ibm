@@ -28,11 +28,12 @@
         datacenter: "{{ datacenter }}"
         machine_type: "{{ machine_type }}"
         hardware: "{{ hardware }}"
-        kube_version: "{{ kube_version }}"
+        #kube_version: "{{ kube_version }}"
         public_vlan_id: "{{ public_vlan_id }}"
         private_vlan_id: "{{ private_vlan_id }}"
-        default_pool_size: "{{ default_worker_ppol_size }}"
-        entitlement: "{{ entitlement }}"
+        default_pool_size: "{{ default_worker_pool_size }}"
+        #entitlement: "{{ entitlement }}"
+        ibmcloud_api_key: "{{ ibmcloud_api_key }}"
       register: cluster_create_output
       when: cluster_output.rc != 0
 
